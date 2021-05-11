@@ -6,10 +6,6 @@ html {
   font-size: 62.5%;
 }
 
-/* CSS Variables */
-
-/* Constructing CSS */
-
 body {
   margin: 0;
   padding: 0;
@@ -38,6 +34,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(231, 125, 38);
+  margin-bottom: 1rem;
 }
 
 nav a {
@@ -176,6 +173,7 @@ footer article a {
   height: 50rem;
   margin: 1px;
   object-fit: cover;
+  object-position: 0px 0%;
 }
 
 #small-project-container {
@@ -189,16 +187,17 @@ footer article a {
   object-position: 0px 90%;
 }
 
-#blm {
-  object-position: 0px 80%;
+#weather-report {
+  object-position: 0px 1%;
 }
 
-#mile-high {
+#workday-calendar {
   object-position: 0px 40%;
 }
 
-#chess {
-  object-position: 0px 38%;
+#password-generator {
+  object-position: center 40%;
+  object-fit: contain;
 }
 
 #footer-nav {
@@ -217,14 +216,21 @@ footer article a {
 @media screen and (max-width: 576px) {
   header {
     flex-direction: column;
-    margin: 0 auto;
-    background-color: rgb(206, 201, 197);
+    background-color: rgb(231, 125, 38);
+    padding: 0;
   }
+
+  /* header {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(231, 125, 38);
+  } */
 
   h1 {
     background-color: rgba(231, 125, 38, 0.876);
-    border: 1px solid black;
-    margin-bottom: 0.75rem;
+    border: none;
   }
 
   aside {
@@ -245,5 +251,27 @@ footer article a {
   #headshot {
     height: 13rem;
     width: 13rem;
+  }
+  #large-project {
+    object-position: center 0%;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+
+  #weather-report {
+    object-position: center 1%;
+  }
+
+  #workday-calendar {
+    object-position: center 40%;
+    object-fit: cover;
+  }
+
+  #password-generator {
+    object-position: center 0%;
+  }
+  #mocos {
+    object-position: center 90%;
   }
 }
