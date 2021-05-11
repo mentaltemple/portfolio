@@ -21,6 +21,7 @@ h1 {
   border: 1px solid whitesmoke;
   padding: 10px;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1:hover {
@@ -41,6 +42,7 @@ nav a {
   text-decoration: none;
   font-size: 2rem;
   padding: 0.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 section {
@@ -51,6 +53,7 @@ aside {
   flex: 0 1 20%;
   border-right: solid chocolate;
   margin: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 article {
@@ -88,6 +91,7 @@ footer article a {
   padding: 0.5px;
   border-bottom: 2px solid rgb(231, 125, 38);
   margin: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav-links {
@@ -122,6 +126,10 @@ footer article a {
   width: 12.5%;
   padding: 5px;
 }
+.large-project-container .content:hover {
+  color: whitesmoke;
+  background-color: rgba(248, 248, 248, 0.363);
+}
 
 .card {
   flex-basis: 50%;
@@ -139,6 +147,11 @@ footer article a {
   height: 25%;
   padding: 5px;
   line-height: normal;
+}
+
+.card .content:hover {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.603);
 }
 
 .small-project {
@@ -249,7 +262,7 @@ footer article a {
   }
   .large-project-container .content {
     display: inline-flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
     bottom: 3px;
@@ -277,8 +290,9 @@ footer article a {
   }
 
   #about-me-block {
-    padding-bottom: 3rem;
-    border-bottom: solid 1px gray;
+    justify-content: center;
+    /* padding-bottom: 3rem;
+    border-bottom: solid 1px gray; */
   }
 
   #headshot {
@@ -286,15 +300,15 @@ footer article a {
     width: 13rem;
   }
   #mobile-h2 {
-    display: block;
+    display: none;
     text-align: center;
-
     padding: 1px;
   }
 
-  #project-block {
+  /* #project-block {
     margin-bottom: 2rem;
-  }
+  } */
+
   #large-project {
     object-position: center 0%;
     object-fit: contain;
