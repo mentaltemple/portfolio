@@ -121,7 +121,7 @@ footer article a {
   position: absolute;
   bottom: 3px;
   left: 2px;
-  background: rgba(210, 105, 30, 0.555);
+  background: rgba(210, 105, 30, 0.774);
   color: white;
   width: 12.5%;
   padding: 5px;
@@ -141,7 +141,7 @@ footer article a {
   position: absolute;
   bottom: 5px;
   left: 2px;
-  background: rgba(210, 105, 30, 0.555);
+  background: rgba(210, 105, 30, 0.774);
   color: white;
   width: 25%;
   height: 25%;
@@ -160,6 +160,13 @@ footer article a {
   height: 25rem;
   object-fit: cover;
   margin: 1px;
+}
+.card img:hover {
+  opacity: 0.5;
+}
+
+.large-project-container img:hover {
+  opacity: 0.5;
 }
 
 #headshot {
@@ -266,10 +273,9 @@ footer article a {
     align-items: center;
     position: absolute;
     bottom: 3px;
-    background: rgba(210, 105, 30, 0.555);
     color: white;
     width: 99.5%;
-    height: 15%;
+    height: 12%;
     padding: 5px;
   }
   .card .content {
@@ -278,7 +284,6 @@ footer article a {
     justify-content: space-between;
     align-items: center;
     bottom: 5px;
-    background: rgba(210, 105, 30, 0.555);
     color: whitesmoke;
     width: 98%;
     height: 10%;
