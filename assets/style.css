@@ -115,13 +115,12 @@ footer article a {
 
 .large-project-container .content {
   position: absolute;
-  bottom: 0;
-  background: rgb(210, 105, 30);
-  background: rgba(210, 105, 30, 0.6);
-  color: whitesmoke;
-  width: 20%;
-  padding: 10px;
-  line-height: normal;
+  bottom: 3px;
+  left: 2px;
+  background: rgba(210, 105, 30, 0.555);
+  color: white;
+  width: 12.5%;
+  padding: 5px;
 }
 
 .card {
@@ -130,19 +129,15 @@ footer article a {
   margin: 0 auto;
 }
 
-.card img {
-  vertical-align: text-top;
-}
-
 .card .content {
   position: absolute;
-  bottom: 0;
-  background: rgb(210, 105, 30);
-  background: rgba(210, 105, 30, 0.6);
-  color: whitesmoke;
+  bottom: 5px;
+  left: 2px;
+  background: rgba(210, 105, 30, 0.555);
+  color: white;
   width: 25%;
-  height: 30%;
-  padding: 10px;
+  height: 25%;
+  padding: 5px;
   line-height: normal;
 }
 
@@ -163,6 +158,9 @@ footer article a {
   display: flex;
 }
 
+#mobile-h2 {
+  display: none;
+}
 #project-block {
   display: block;
 }
@@ -201,7 +199,6 @@ footer article a {
 
 #password-generator {
   object-position: center 40%;
-  object-fit: contain;
 }
 #password-generator-mobile {
   display: none;
@@ -217,8 +214,6 @@ footer article a {
   background-color: gray;
 }
 /* MEDIA QUERIES */
-@media screen and (max-width: 768px) {
-}
 
 @media screen and (max-width: 576px) {
   header {
@@ -249,15 +244,56 @@ footer article a {
     padding-left: 1rem;
     font-family: "Montserrat", sans-serif;
   }
+  h3 {
+    font-size: 1.1rem;
+  }
+  .large-project-container .content {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: 3px;
+    background: rgba(210, 105, 30, 0.555);
+    color: white;
+    width: 99.5%;
+    height: 15%;
+    padding: 5px;
+  }
+  .card .content {
+    display: inline-flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 5px;
+    background: rgba(210, 105, 30, 0.555);
+    color: whitesmoke;
+    width: 98%;
+    height: 10%;
+  }
 
   #nav-bar {
     margin: 0.75rem;
     display: none;
   }
 
+  #about-me-block {
+    padding-bottom: 3rem;
+    border-bottom: solid 1px gray;
+  }
+
   #headshot {
     height: 13rem;
     width: 13rem;
+  }
+  #mobile-h2 {
+    display: block;
+    text-align: center;
+
+    padding: 1px;
+  }
+
+  #project-block {
+    margin-bottom: 2rem;
   }
   #large-project {
     object-position: center 0%;
